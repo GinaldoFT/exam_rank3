@@ -71,11 +71,6 @@ int	main(int ac, char *av[])
 	char *str = av[1];
 	int	min_remove = count(str);
 	char buffer[256];
-	int i = -1;
-
-	while (str[++i])
-		buffer[i] = str[i];
-	buffer[i] = '\0';
 	print_solutions(str, 0, 0, 0, 0, min_remove, buffer);
 	return (0);
 }
