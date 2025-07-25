@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include <stdlib.h>
 
 void ft_swap(char *a, char *b)
 {
