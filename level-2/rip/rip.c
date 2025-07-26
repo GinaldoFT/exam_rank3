@@ -1,13 +1,4 @@
-#include <unistd.h>
-
-int		ft_strlen(char *str)
-{
-	int len = 0;
-
-	while (str[len])
-		len++;
-	return (len);
-}
+#include <stdio.h>
 
 void	print_solutions(char *str, int index, int open, int close, int removed, int min_remove, char *buffer)
 {
@@ -16,8 +7,7 @@ void	print_solutions(char *str, int index, int open, int close, int removed, int
 		if (open == close && removed == min_remove)
 		{
 			buffer[index] = '\0';
-			write(1, buffer, ft_strlen(buffer));
-			write(1, "\n", 1);
+			puts(buffer);
 		}
 		return ;
 	}
