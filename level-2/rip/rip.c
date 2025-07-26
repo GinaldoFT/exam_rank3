@@ -15,6 +15,7 @@ void	print_solutions(char *str, int index, int open, int close, int removed, int
 	{
 		if (open == close && removed == min_remove)
 		{
+			buffer[index] = '\0';
 			write(1, buffer, ft_strlen(buffer));
 			write(1, "\n", 1);
 		}
